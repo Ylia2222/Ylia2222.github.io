@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,14 +27,14 @@
         }
 
         .main-header-icon {
-            width: 100px;
-            height: 100px;
+            margin: 1%;
+            width: clamp(1rem, 5vw, 3rem);
+            height: clamp(1rem, 5vw, 3rem);
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 100%;
             overflow: hidden;
-            margin: 1%;
         }
 
         .main-header-icon img {
@@ -64,12 +65,46 @@
         }
 
         .main-header-h1 {
-            font-size: 2.5rem;
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 1%;
         }
+
+        .main-nav-dropdown {
+            display: none;
+        }
+
+        .main-nav-dropdown:hover+.main-nav {
+            display: block;
+            position: absolute;
+        }
+
+        @media(max-width: 480px) {
+            .main-nav-box {
+                position: relative;
+            }
+
+            .main-nav {
+                display: none;
+            }
+
+            .main-nav-dropdown {
+                display: block;
+                font-size: 3rem;
+                color: var(--color-text);
+                flex: 1;
+                text-align: center;
+                /background: pink;
+            }
+
+            .main-nav-dropdown:active+.main-nav {
+                display: block;
+                position: absolute;
+            }
+        }
+
     </style>
 </head>
 
@@ -78,11 +113,16 @@
         <div class="main-header-icon">
             <img src="assets/test-icon.jpg" alt="">
         </div>
-        <nav class="main-nav">
-            <a href="#">Главная</a>
-            <a href="#">Дизайн</a>
-            <a href="#">Код</a>
+        <nav class="main-nav-box">
+            <a href="#" class="main-nav-dropdown">=</a>
+            <nav class="main-nav">
+                <a href="#">Главная</a>
+                <a href="#">Дизайн</a>
+                <a href="#">Код</a>
+            </nav>
         </nav>
         <h1 class="main-header-h1">WEBSITE</h1>
     </header>
-</body></html>
+</body>
+
+</html>
