@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SlackChat — учебный командный чат</title>
+    <meta
+      name="description"
+      content="SlackChat — небольшой приватный чат в стиле Slack для учебных групп, маленьких команд и закрытых сообществ."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <div class="container">
+        <nav class="top-nav">
+          <p class="tag">SlackChat</p>
+          <a class="ghost-link" href="#faq">FAQ</a>
+        </nav>
+        <h1>Приватный веб-чат в стиле Slack для небольших команд</h1>
+        <p class="subtitle">
+          SlackChat помогает учиться и работать в закрытых группах: каналы,
+          роли, треды и админка в одном простом интерфейсе.
+        </p>
+        <div class="hero-actions">
+          <a class="cta" href="https://github.com/Ylia2222/slackchat" target="_blank" rel="noreferrer">
+            Посмотреть проект на GitHub
+          </a>
+          <a class="secondary" href="#how-it-works">Как это работает</a>
+        </div>
+        <div class="hero-mockup" aria-hidden="true">
+          <div class="mockup-sidebar"></div>
+          <div class="mockup-content">
+            <div class="mockup-row"></div>
+            <div class="mockup-row short"></div>
+            <div class="mockup-row"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="section">
+        <div class="container">
+          <h2>Что такое SlackChat</h2>
+          <p>
+            SlackChat — это веб-чат в стиле Slack для небольших команд, учебных
+            групп и закрытых сообществ. Продукт можно описать так: небольшой
+            приватный командный чат с гибкими ролями и удобной админкой.
+          </p>
+        </div>
+      </section>
+
+      <section id="audience" class="section section-muted">
+        <div class="container">
+          <h2>Для кого</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>Учебные группы и курсы</h3>
+              <p>Для командной работы студентов и преподавателей в одном чате.</p>
+            </article>
+            <article class="card">
+              <h3>Маленькие команды и стартапы</h3>
+              <p>Для повседневной коммуникации без сложного корпоративного стека.</p>
+            </article>
+            <article class="card">
+              <h3>Закрытые клубы и сообщества</h3>
+              <p>Для приватного общения с управлением доступом по ролям и каналам.</p>
+            </article>
+            <article class="card">
+              <h3>Разработчики-ученики</h3>
+              <p>Для изучения, как устроен веб-чат изнутри и как его расширять.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="benefits" class="section">
+        <div class="container">
+          <h2>Ключевые преимущества</h2>
+          <ul class="tick-list">
+            <li>Контроль доступа и ролей внутри каналов.</li>
+            <li>Типы каналов: public, private, read_only.</li>
+            <li>Треды для аккуратных обсуждений и контекста.</li>
+            <li>Удобная админка для управления регистрацией и пользователями.</li>
+            <li>Простой запуск и понятный формат для обучения.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="features" class="section section-muted">
+        <div class="container">
+          <h2>Функции</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>Каналы</h3>
+              <ul>
+                <li>Public/private/read_only.</li>
+                <li>Вступление и выход из каналов.</li>
+                <li>Приглашения в приватные каналы.</li>
+                <li>Удаление участников из каналов.</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Сообщения</h3>
+              <ul>
+                <li>Отправка сообщений в канале.</li>
+                <li>Ответы на сообщения (простые треды).</li>
+                <li>Редактирование сообщений.</li>
+                <li>Мягкое удаление без потери истории аудита.</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Роли</h3>
+              <ul>
+                <li>Мастер-админ: полный контроль приложения.</li>
+                <li>Обычный пользователь: работа в доступных каналах.</li>
+                <li>Роли канала: owner, member, read_only.</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Админка</h3>
+              <ul>
+                <li>Включение и выключение регистрации.</li>
+                <li>Создание пользователей.</li>
+                <li>Архивирование и окончательное удаление пользователей.</li>
+                <li>Управление участниками каналов.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="section">
+        <div class="container">
+          <h2>Как это работает</h2>
+          <ol class="steps">
+            <li>Пользователь регистрируется или создается админом.</li>
+            <li>Создаются каналы: public, private, read_only.</li>
+            <li>Владелец канала или админ приглашает участников.</li>
+            <li>Участники общаются в сообщениях и тредах.</li>
+            <li>Админ управляет пользователями и настройками системы.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="learning" class="section section-muted">
+        <div class="container">
+          <h2>Почему это полезно как учебный проект</h2>
+          <ul class="tick-list">
+            <li>Показывает путь от базового веб-приложения до чата с ролями.</li>
+            <li>Дает практику с базой данных, авторизацией и правами доступа.</li>
+            <li>Удобен для курсов и самостоятельного обучения.</li>
+            <li>Код открыт: можно изучать и дорабатывать под свои задачи.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="faq" class="section">
+        <div class="container">
+          <h2>FAQ</h2>
+          <div class="faq-list">
+            <details>
+              <summary>Это реальный продукт или учебный?</summary>
+              <p>
+                SlackChat в первую очередь учебный проект, который можно
+                использовать и как рабочий чат для маленьких команд.
+              </p>
+            </details>
+            <details>
+              <summary>Можно ли использовать SlackChat в небольшой команде?</summary>
+              <p>Да, особенно если нужна закрытая коммуникация с простым контролем ролей.</p>
+            </details>
+            <details>
+              <summary>Где хранится информация?</summary>
+              <p>
+                Данные хранятся в базе данных приложения. Конкретная конфигурация
+                зависит от вашего развертывания.
+              </p>
+            </details>
+            <details>
+              <summary>Можно ли дописать свои функции?</summary>
+              <p>Да, проект подходит для доработок и изучения архитектуры веб-чата.</p>
+            </details>
+            <details>
+              <summary>Подходит ли это как проект для портфолио?</summary>
+              <p>Да, потому что демонстрирует роли, каналы, треды и админку в одном продукте.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-cta">
+        <div class="container final-cta">
+          <h2>Готовы посмотреть проект?</h2>
+          <p>
+            SlackChat помогает быстро понять, как работает современный
+            командный чат с ролями, каналами и админкой.
+          </p>
+          <a class="cta" href="https://github.com/Ylia2222/slackchat" target="_blank" rel="noreferrer">
+            Посмотреть проект на GitHub
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>SlackChat Landing • GitHub Pages ready (статический HTML/CSS)</p>
+      </div>
+    </footer>
+  </body>
+</html>
